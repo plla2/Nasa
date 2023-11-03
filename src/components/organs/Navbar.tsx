@@ -4,18 +4,30 @@ import { NavLinks } from "../particles/Data";
 import List from "../atoms/List";
 import { CgGym } from "@react-icons/all-files/cg/CgGym";
 import { GiHamburgerMenu } from "@react-icons/all-files/gi/GiHamburgerMenu";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [navbarBg, setNavbarBg] = useState(false);
+
+  const listenScrollEvent = () => {
+    window.scrollY > 10 ? setNavbarBg(true) : setNavbarBg(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
+  }, []);
 
   const handleOpen = () => {
     setOpen(!open);
   };
 
   return (
-    <header>
-      <nav>
+    <header className="w-full h-auto bg-transparent overflow-x-hidden fixed top-0 left-0">
+      <nav className={``}>
         <Link to={"/"}>
           <Text as="span" className="">
             <CgGym />
