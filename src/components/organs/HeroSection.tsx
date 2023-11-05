@@ -10,6 +10,7 @@ import Text from "../atoms/Text";
 import Button from "../atoms/Button";
 import { AiOutlineArrowLeft } from "@react-icons/all-files/ai/AiOutlineArrowLeft";
 import { AiOutlineArrowRight } from "@react-icons/all-files/ai/AiOutlineArrowRight";
+import StickyIcons from "../molecules/StickyIcons";
 
 const HeroSection = () => {
   const slideRef = useRef<Slider | null>();
@@ -106,6 +107,7 @@ const HeroSection = () => {
           <AiOutlineArrowRight />
         </Button>
       </div>
+      <StickyIcons />
     </section>
   );
 };
