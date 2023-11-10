@@ -1,5 +1,6 @@
 import About from "../organs/About";
 import HeroSection from "../organs/HeroSection";
+import Membership from "../organs/Membership";
 import Offers from "../organs/Offers";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
       <HeroSection />
       <About />
       <Offers />
+      <Membership />
     </>
   );
 };
