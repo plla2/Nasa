@@ -32,7 +32,6 @@ const About = () => {
               >
                 01
               </Text>
-              Fade
             </div>
             <Text as="h2" className="text-zinc-200 mt-10 mb-4 text-lg">
               {AboutTexts.caption}
