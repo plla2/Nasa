@@ -3,6 +3,7 @@ import Calculator from "../organs/Calculator";
 import HeroSection from "../organs/HeroSection";
 import Membership from "../organs/Membership";
 import Offers from "../organs/Offers";
+import Testimonials from "../organs/Testimonials";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Offers />
       <Membership />
       <Calculator />
+      <Testimonials />
     </>
   );
 };
