@@ -1,5 +1,6 @@
 import About from "../organs/About";
 import Calculator from "../organs/Calculator";
+import Contact from "../organs/Contact";
 import HeroSection from "../organs/HeroSection";
 import Membership from "../organs/Membership";
 import { News } from "../organs/News";
@@ -16,6 +17,7 @@ const Home = () => {
       <Calculator />
       <Testimonials />
       <News />
+      <Contact />
     </>
   );
 };
