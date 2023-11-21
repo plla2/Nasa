@@ -37,9 +37,9 @@ const Calculator = () => {
 
         <div className="w-full lg:h-[800px] md:h-[600px] h-[300px] md:order-2 order-1 grid">
           <Image
-            alt="Offer Image"
+            alt="calculator"
             objectCover="object-cover"
-            className="w-full h-full"
+            className="w-full h-[800px]"
             image={CalImg}
           />
         </div>
